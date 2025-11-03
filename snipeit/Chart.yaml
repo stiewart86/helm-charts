@@ -6,7 +6,7 @@ home: https://github.com/stiewart86/helm-charts
 icon: https://github.com/snipe/snipe-it/blob/eb9cfbaed6fc830e9b114c625896a636842f2d1a/public/img/demo/snipe-logo-bug.png?raw=true
 
 type: application
-version: 2.0.7
+version: 2.0.8
 appVersion: "8.3.4"
 
 keywords:

@@ -97,6 +97,11 @@ spec:
               value: "{{ .Values.snipeit.config.timezone }}"
             - name: APP_LOCALE
               value: "{{ .Values.snipeit.config.locale }}"
+          envFrom:
+            {{ if .Values.config.externalSecrets }}
+            - secretRef:
+                name: {{ .Values.config.externalSecrets }}
+            {{ end }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}

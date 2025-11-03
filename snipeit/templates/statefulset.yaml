@@ -98,10 +98,8 @@ spec:
             - name: APP_LOCALE
               value: "{{ .Values.snipeit.config.locale }}"
           envFrom:
-            {{ if .Values.config.externalSecrets }}
             - secretRef:
-                name: {{ .Values.config.externalSecrets }}
-            {{ end }}
+                name: {{ include "snipeit.fullname" . }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}

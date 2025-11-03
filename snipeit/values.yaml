@@ -102,6 +102,7 @@ snipeit:
     url: http://snipeit.example.com
     timezone: Europe/Berlin
     locale: en
+    envConfig: []
   persistence:
     size: 2Gi
     storageClass: longhorn
